@@ -10,7 +10,7 @@
 ##Installation
 
 ```
-docker pull sebstinkeste/docker-mysql-5.5-multibases
+docker pull sebstinkeste/mysql
 ```
 
 ## Environment variables
