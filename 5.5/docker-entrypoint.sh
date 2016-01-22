@@ -19,10 +19,10 @@ function multibases {
         echo "CREATE DATABASE IF NOT EXISTS \`$database\` ;" | "${mysql[@]}"
             
                 
-        if ["$MYSQL_DATABASE_"]; then
-            echo "GRANT ALL ON \`$database\`.* TO '$MYSQL_USER'@'%' ; " | "${mysql[@]}"
-        fi
-            echo 'FLUSH PRIVILEGES ;' | "${mysql[@]}"
+        
+        echo "GRANT ALL ON \`$database\`.* TO '$MYSQL_USER'@'%' ; " | "${mysql[@]}"
+        
+        echo 'FLUSH PRIVILEGES ;' | "${mysql[@]}"
         
     done
 }
