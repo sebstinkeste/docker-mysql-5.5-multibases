@@ -1,4 +1,4 @@
-# docker-mysql-5.5-multibases (2 databases)
+# docker-mysql-5.5-multibases
 
 ## Pré-requis
 
