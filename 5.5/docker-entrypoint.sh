@@ -16,9 +16,7 @@ function multibases {
     for database in $(printenv | grep MYSQL_DATABASE_ | cut -d"=" -f2)
     do 
         
-        echo "CREATE DATABASE IF NOT EXISTS \`$database\` ;" | "${mysql[@]}"
-            
-                
+        echo "CREATE DATABASE IF NOT EXISTS \`$database\` ;" | "${mysql[@]}"     
         
         echo "GRANT ALL ON \`$database\`.* TO '$MYSQL_USER'@'%' ; " | "${mysql[@]}"
         
